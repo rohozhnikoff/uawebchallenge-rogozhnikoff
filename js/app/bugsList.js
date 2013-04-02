@@ -7,12 +7,11 @@ var BugsList = Backbone.Collection.extend({
     model.crashMe();
     _.delay(function(collection){collection.remove(model)}, 300, this);
   },
+  // получаем крайний нижний жук
   lastBottom: function(){
-    // не подходит, если будет рандомное расставление
-    // return this.models[this.models.length - 1];
-
     return this.max(function(bug){return bug.top})
   },
+  // получаем крайний правый жук
   lastRight: function(){
     return this.max(function(bug){return bug.left});
   }

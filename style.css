@@ -5,8 +5,15 @@
 
 body {
     background: #333 url(img/stars.jpg) center top repeat;
+    font: 30px Arial;
+    text-align: center;
+    color: #fff;
 }
-
+.info {
+    width: 800px;
+    font-size: 20px;
+    margin: 0 auto 20px;
+}
 #screen {
     width: 800px;
     height: 600px;
@@ -66,12 +73,9 @@ body {
     top: 46%;
     left: 0;
     width: 100%;
-    font: 30px Arial;
-    text-align: center;
-    color: #fff;
-    cursor: pointer;
 }
-.action:hover span{
+.action span:hover{
+    cursor: pointer;
     text-decoration: underline;
 }
 .loose {
